@@ -1,0 +1,122 @@
+import { createClient } from '@/lib/supabase/server'
+import { redirect } from 'next/navigation'
+
+export default async function DashboardPage() {
+  const supabase = await createClient()
+
+  // 1. Obtener sesión actual
+  const { data: { user }, error: userError } = await supabase.auth.getUser()
+
+  if (userError || !user) {
+    redirect('/login')
+  }
+
+  // 2. Obtener perfil
+  const { data: perfil } = await supabase
+    .from('perfiles')
+    .select('*')
+    .eq('id', user.id)
+    .single()
+
+  // 3. Obtener "Mis Compras" (pedidos APPROVED con los datos del producto)
+  // Usamos un simple join de Supabase entre "pedidos" y "productos"
+  const { data: misCompras, error: comprasError } = await supabase
+    .from('pedidos')
+    .select(`
+      id,
+      monto_total,
+      created_at,
+      estado_pago,
+      productos (
+        id,
+        nombre,
+        descripcion,
+        imagen_url,
+        archivo_url
+      )
+    `)
+    .eq('usuario_id', user.id)
+    .eq('estado_pago', 'approved')
+    .order('created_at', { ascending: false })
+
+  return (
+    <div className="max-w-5xl mx-auto flex flex-col gap-12 py-8">
+      {/* Saludo */}
+      <div className="bg-white rounded-[2.5rem] p-8 sm:p-12 shadow-sm border border-light-green/20 relative overflow-hidden">
+        <div className="relative z-10 text-center sm:text-left">
+          <h2 className="text-4xl sm:text-5xl font-serif text-primary mb-4 leading-tight">
+            Hola, <span className="text-accent italic">{perfil?.nombre_completo || user.email?.split('@')[0]}</span> 👋
+          </h2>
+          <p className="text-primary/60 max-w-lg text-lg italic font-sans leading-relaxed">
+            Tu jardín digital de conocimientos. Aquí tienes acceso a todas las herramientas y recursos que has adquirido.
+          </p>
+        </div>
+        {/* Decoración sutil */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-light-green/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+      </div>
+
+      {/* Mis Compras */}
+      <div className="px-4 sm:px-0">
+        <h3 className="text-3xl font-serif text-primary mb-8 border-b border-light-green/20 pb-4">Mis Recursos</h3>
+        
+        {!misCompras || misCompras.length === 0 ? (
+          <div className="bg-white/50 rounded-[2rem] p-16 text-center border-2 border-light-green/20 border-dashed">
+             <p className="text-primary/50 font-serif text-xl mb-8 italic">Aún no has sembrado ningún recurso en tu biblioteca.</p>
+             <a href="/shop" className="bg-primary hover:bg-forest text-white px-10 py-4 rounded-full font-bold transition-all inline-block shadow-lg hover:shadow-forest/20">
+               Explorar Catálogo
+             </a>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {misCompras.map((compra: any) => {
+              const producto = compra.productos
+              if (!producto) return null
+
+              return (
+                <div key={compra.id} className="bg-white rounded-[2rem] p-8 shadow-sm border border-light-green/20 flex flex-col hover:shadow-xl transition-all duration-300 group">
+                  
+                  {/* Info Producto */}
+                  <div className="flex gap-6 items-start">
+                    <div className="w-24 h-24 bg-background rounded-2xl flex-shrink-0 overflow-hidden relative border border-light-green/10 group-hover:border-accent/30 transition-colors">
+                      {producto.imagen_url ? (
+                        <img src={producto.imagen_url} alt={producto.nombre} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-primary/30 font-serif">PDF</div>
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-serif text-xl text-primary leading-tight mb-2 group-hover:text-forest transition-colors">{producto.nombre}</h4>
+                      <p className="text-sm text-primary/60 italic line-clamp-2">{producto.descripcion || 'Recurso digital educativo'}</p>
+                    </div>
+                  </div>
+
+                  {/* Acciones */}
+                  <div className="mt-8 pt-6 border-t border-light-green/10 flex items-center justify-between">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] uppercase tracking-widest text-primary/40 font-bold mb-1">Estado</span>
+                      <span className="text-xs font-bold text-forest bg-forest/5 px-3 py-1 rounded-full border border-forest/10">
+                        Comprado
+                      </span>
+                    </div>
+                    
+                    <form action={`/api/descargar`} method="GET">
+                      <input type="hidden" name="path" value={producto.archivo_url} />
+                      <button 
+                        type="submit"
+                        className="flex items-center gap-3 bg-primary hover:bg-forest text-white px-6 py-3 rounded-2xl font-bold text-sm transition-all shadow-md active:scale-95"
+                      >
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Descargar
+                      </button>
+                    </form>
+                  </div>
+
+                </div>
+              )
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
