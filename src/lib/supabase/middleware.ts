@@ -36,16 +36,16 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser()
 
   // Protect Dashboard routes
-  if (!user && request.nextUrl.pathname.startsWith('/dashboard')) {
+  if (!user && request.nextUrl.pathname.startsWith('/commerce/dashboard')) {
     const url = request.nextUrl.clone()
-    url.pathname = '/login'
+    url.pathname = '/commerce/login'
     return NextResponse.redirect(url)
   }
 
   // Redirect to dashboard if logged in and trying to access auth pages
-  if (user && (request.nextUrl.pathname.startsWith('/login') || request.nextUrl.pathname.startsWith('/register'))) {
+  if (user && (request.nextUrl.pathname.startsWith('/commerce/login') || request.nextUrl.pathname.startsWith('/commerce/register'))) {
      const url = request.nextUrl.clone()
-     url.pathname = '/dashboard'
+     url.pathname = '/commerce/dashboard'
      return NextResponse.redirect(url)
   }
 

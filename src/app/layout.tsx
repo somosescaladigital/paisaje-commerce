@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display, Outfit } from "next/font/google";
 import Navbar from "@/components/shared/Navbar";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,34 +19,33 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Escala Digital | Paisajismo & Coaching",
   description: "Tienda de productos virtuales y servicios de paisajismo.",
 };
 
-export default function RootLayout({
+import DynamicLayoutWrapper from "@/components/layout/DynamicLayoutWrapper";
+import ModalProvider from "@/components/providers/ModalProvider";
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${outfit.variable} ${playfair.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased bg-background text-foreground min-h-screen flex flex-col font-sans relative`}
+        className={`${outfit.className} antialiased bg-background text-foreground min-h-screen flex flex-col relative`}
       >
-        {/* Fondo de Paisaje Sutil */}
-        <div className="fixed inset-0 z-[-1] pointer-events-none opacity-[0.05] grayscale divide-y-0">
-          <img 
-            src="/images/bg-landscape.png" 
-            alt="Background" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        <Navbar />
-        <main className="flex-1 relative flex flex-col">
+        <ModalProvider />
+        <DynamicLayoutWrapper navbar={<Navbar />}>
           {children}
-        </main>
+        </DynamicLayoutWrapper>
       </body>
     </html>
   );

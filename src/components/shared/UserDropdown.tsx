@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { signOut } from '@/app/(auth)/actions'
+import { signOut } from '@/app/commerce/(auth)/actions'
 
 interface UserDropdownProps {
   user: any
@@ -66,7 +66,7 @@ export default function UserDropdown({ user }: UserDropdownProps) {
               Inicio
             </Link>
             <Link 
-              href="/shop" 
+              href="/commerce/shop" 
               onClick={() => setIsOpen(false)}
               className="px-5 py-2.5 text-sm text-primary/80 hover:text-primary hover:bg-light-green/10 transition-colors flex items-center gap-3"
             >
@@ -74,7 +74,7 @@ export default function UserDropdown({ user }: UserDropdownProps) {
               Catálogo
             </Link>
             <Link 
-              href="/dashboard" 
+              href="/commerce/dashboard" 
               onClick={() => setIsOpen(false)}
               className="px-5 py-2.5 text-sm text-primary/80 hover:text-primary hover:bg-light-green/10 transition-colors flex items-center gap-3"
             >

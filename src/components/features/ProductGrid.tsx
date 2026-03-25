@@ -1,7 +1,9 @@
 'use client'
 
 import { useCartStore } from '@/stores/useCartStore'
+import { useAuthModalStore } from '@/stores/useAuthModalStore'
 import { formatCurrency } from '@/lib/utils'
+import { User } from '@supabase/supabase-js'
 
 interface Product {
   id: string
@@ -11,8 +13,15 @@ interface Product {
   imagen_url: string | null
 }
 
-export default function ProductGrid({ products }: { products: Product[] }) {
+export default function ProductGrid({ 
+  products,
+  user
+}: { 
+  products: Product[],
+  user: User | null
+}) {
   const addItem = useCartStore((state) => state.addItem)
+  const { openModal } = useAuthModalStore()
 
   if (!products || products.length === 0) {
     return (
@@ -57,12 +66,18 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                 {formatCurrency(product.precio)}
               </span>
               <button 
-                onClick={() => addItem({
-                  id: product.id,
-                  nombre: product.nombre,
-                  precio: product.precio,
-                  imagen_url: product.imagen_url
-                })}
+                onClick={() => {
+                  if (!user) {
+                    openModal('login')
+                    return
+                  }
+                  addItem({
+                    id: product.id,
+                    nombre: product.nombre,
+                    precio: product.precio,
+                    imagen_url: product.imagen_url
+                  })
+                }}
                 className="bg-primary hover:bg-forest text-white h-12 w-12 flex items-center justify-center rounded-2xl transition-all shadow-md active:scale-95 group/btn"
                 aria-label="Añadir al carrito"
               >
