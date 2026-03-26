@@ -3,7 +3,7 @@
     "0064b9664c94fad12254ece1131c5b4f3fa717d6a4": {
       "workers": {
         "app/commerce/page": {
-          "moduleId": 18417,
+          "moduleId": 29675,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
@@ -14,6 +14,21 @@
       },
       "exportedName": "signOut",
       "filename": "src/app/commerce/(auth)/actions.ts"
+    },
+    "60a62687bd83f460a5bc83a211ade218c0ab1c2865": {
+      "workers": {
+        "app/commerce/page": {
+          "moduleId": 29675,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/page": "action-browser"
+      },
+      "exportedName": "sendWelcomeAction",
+      "filename": "src/app/actions/emails.ts"
     }
   },
   "edge": {}

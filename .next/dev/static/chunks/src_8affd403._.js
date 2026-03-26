@@ -14,10 +14,10 @@ const useCartStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
         items: [],
         addItem: (newItem)=>{
             set((state)=>{
-                const existingItem = state.items.find((item)=>item.id === newItem.id);
+                const existingItem = state.items.find((item)=>item.id === newItem.id && item.pago_tipo === newItem.pago_tipo);
                 if (existingItem) {
                     return {
-                        items: state.items.map((item)=>item.id === newItem.id ? {
+                        items: state.items.map((item)=>item.id === newItem.id && item.pago_tipo === newItem.pago_tipo ? {
                                 ...item,
                                 cantidad: item.cantidad + 1
                             } : item)
@@ -432,10 +432,30 @@ function CartSidebar() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex justify-between items-start gap-3",
                                                             children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                    className: "font-serif text-lg text-primary leading-tight line-clamp-2",
-                                                                    children: item.nombre
-                                                                }, void 0, false, {
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                            className: "font-serif text-lg text-primary leading-tight line-clamp-2",
+                                                                            children: item.nombre
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/features/CartSidebar.tsx",
+                                                                            lineNumber: 106,
+                                                                            columnNumber: 29
+                                                                        }, this),
+                                                                        item.pago_tipo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[10px] font-bold text-accent uppercase tracking-widest leading-none mt-1 inline-block",
+                                                                            children: [
+                                                                                "(",
+                                                                                item.pago_tipo === 'mensual' ? 'Mensual' : 'Pago Total',
+                                                                                ")"
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/features/CartSidebar.tsx",
+                                                                            lineNumber: 107,
+                                                                            columnNumber: 48
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
                                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
                                                                     lineNumber: 105,
                                                                     columnNumber: 27
@@ -457,32 +477,32 @@ function CartSidebar() {
                                                                                 d: "M3 6h18"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                                lineNumber: 108,
+                                                                                lineNumber: 113,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                                 d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                                lineNumber: 109,
+                                                                                lineNumber: 114,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                                 d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                                lineNumber: 110,
+                                                                                lineNumber: 115,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                        lineNumber: 107,
+                                                                        lineNumber: 112,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                    lineNumber: 106,
+                                                                    lineNumber: 111,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
@@ -503,7 +523,7 @@ function CartSidebar() {
                                                                             children: "-"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                            lineNumber: 117,
+                                                                            lineNumber: 122,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -511,7 +531,7 @@ function CartSidebar() {
                                                                             children: item.cantidad
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                            lineNumber: 120,
+                                                                            lineNumber: 125,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -520,13 +540,13 @@ function CartSidebar() {
                                                                             children: "+"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                            lineNumber: 121,
+                                                                            lineNumber: 126,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                    lineNumber: 116,
+                                                                    lineNumber: 121,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -534,13 +554,13 @@ function CartSidebar() {
                                                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCurrency"])(item.precio * item.cantidad)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                                    lineNumber: 125,
+                                                                    lineNumber: 130,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                            lineNumber: 115,
+                                                            lineNumber: 120,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
@@ -576,7 +596,7 @@ function CartSidebar() {
                                                 children: "Subtotal"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 141,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -584,13 +604,13 @@ function CartSidebar() {
                                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCurrency"])(getTotal())
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 142,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 140,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -610,12 +630,12 @@ function CartSidebar() {
                                                     d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 145,
                                                     columnNumber: 189
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                lineNumber: 140,
+                                                lineNumber: 145,
                                                 columnNumber: 20
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -623,13 +643,13 @@ function CartSidebar() {
                                                 children: "Pago 100% Seguro vía Mercado Pago"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 146,
                                                 columnNumber: 20
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 144,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -651,7 +671,7 @@ function CartSidebar() {
                                                     strokeWidth: "4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                    lineNumber: 145,
+                                                    lineNumber: 150,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -660,13 +680,13 @@ function CartSidebar() {
                                                     d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                    lineNumber: 146,
+                                                    lineNumber: 151,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 149,
                                             columnNumber: 32
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                             children: [
@@ -675,7 +695,7 @@ function CartSidebar() {
                                                     children: "Finalizar Pedido"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                    lineNumber: 148,
+                                                    lineNumber: 153,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -695,33 +715,33 @@ function CartSidebar() {
                                                             y2: "12"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 154,
                                                             columnNumber: 166
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                                                             points: "12 5 19 12 12 19"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 154,
                                                             columnNumber: 210
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                                    lineNumber: 149,
+                                                    lineNumber: 154,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                        lineNumber: 143,
+                                        lineNumber: 148,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/features/CartSidebar.tsx",
-                                lineNumber: 134,
+                                lineNumber: 139,
                                 columnNumber: 34
                             }, this)
                         ]
@@ -1498,11 +1518,11 @@ var _s = __turbopack_context__.k.signature();
 function AuthModal() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(76);
-    if ($[0] !== "3f09441db937b3cfa0ba48fe4773ac9e2d1e3193f4c32cd352f6e8509470f872") {
+    if ($[0] !== "fd1556d1277d4bd8a87a15e62a67071f60b51ac50c8c546f0922eacdddaf3430") {
         for(let $i = 0; $i < 76; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3f09441db937b3cfa0ba48fe4773ac9e2d1e3193f4c32cd352f6e8509470f872";
+        $[0] = "fd1556d1277d4bd8a87a15e62a67071f60b51ac50c8c546f0922eacdddaf3430";
     }
     const { isOpen, view, closeModal, setView } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$stores$2f$useAuthModalStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuthModalStore"])();
     const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
@@ -1640,7 +1660,7 @@ function AuthModal() {
             children: t7
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 158,
+            lineNumber: 159,
             columnNumber: 10
         }, this);
         $[16] = t7;
@@ -1658,7 +1678,7 @@ function AuthModal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 166,
+            lineNumber: 167,
             columnNumber: 10
         }, this);
         $[18] = t6;
@@ -1675,7 +1695,7 @@ function AuthModal() {
             children: t10
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 176,
+            lineNumber: 177,
             columnNumber: 11
         }, this);
         $[21] = t10;
@@ -1692,7 +1712,7 @@ function AuthModal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 184,
+            lineNumber: 185,
             columnNumber: 11
         }, this);
         $[23] = t11;
@@ -1720,7 +1740,7 @@ function AuthModal() {
                     y2: "18"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 193,
+                    lineNumber: 194,
                     columnNumber: 154
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1730,13 +1750,13 @@ function AuthModal() {
                     y2: "18"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 193,
+                    lineNumber: 194,
                     columnNumber: 192
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 193,
+            lineNumber: 194,
             columnNumber: 11
         }, this);
         $[26] = t13;
@@ -1751,7 +1771,7 @@ function AuthModal() {
             children: t13
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 200,
+            lineNumber: 201,
             columnNumber: 11
         }, this);
         $[27] = closeModal;
@@ -1769,7 +1789,7 @@ function AuthModal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 208,
+            lineNumber: 209,
             columnNumber: 11
         }, this);
         $[29] = t12;
@@ -1788,7 +1808,7 @@ function AuthModal() {
                     children: "Nombre Completo"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 217,
+                    lineNumber: 218,
                     columnNumber: 61
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1802,13 +1822,13 @@ function AuthModal() {
                     required: true
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 217,
+                    lineNumber: 218,
                     columnNumber: 168
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 217,
+            lineNumber: 218,
             columnNumber: 34
         }, this);
         $[32] = name;
@@ -1824,7 +1844,7 @@ function AuthModal() {
             children: "Email"
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 228,
+            lineNumber: 229,
             columnNumber: 11
         }, this);
         $[35] = t17;
@@ -1855,13 +1875,13 @@ function AuthModal() {
                     required: true
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 244,
+                    lineNumber: 245,
                     columnNumber: 43
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 244,
+            lineNumber: 245,
             columnNumber: 11
         }, this);
         $[37] = email;
@@ -1876,7 +1896,7 @@ function AuthModal() {
             children: "Contraseña"
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 252,
+            lineNumber: 253,
             columnNumber: 11
         }, this);
         $[39] = t20;
@@ -1907,13 +1927,13 @@ function AuthModal() {
                     required: true
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 268,
+                    lineNumber: 269,
                     columnNumber: 43
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 268,
+            lineNumber: 269,
             columnNumber: 11
         }, this);
         $[41] = password;
@@ -1928,7 +1948,7 @@ function AuthModal() {
             children: error
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 276,
+            lineNumber: 277,
             columnNumber: 20
         }, this);
         $[43] = error;
@@ -1945,7 +1965,7 @@ function AuthModal() {
             children: t24
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 285,
+            lineNumber: 286,
             columnNumber: 11
         }, this);
         $[45] = loading;
@@ -1968,7 +1988,7 @@ function AuthModal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 294,
+            lineNumber: 295,
             columnNumber: 11
         }, this);
         $[48] = handleEmailAuth;
@@ -1990,7 +2010,7 @@ function AuthModal() {
                     className: "flex-1 h-px bg-light-green/10"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 307,
+                    lineNumber: 308,
                     columnNumber: 57
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1998,20 +2018,20 @@ function AuthModal() {
                     children: "O continua con"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 307,
+                    lineNumber: 308,
                     columnNumber: 106
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex-1 h-px bg-light-green/10"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 307,
+                    lineNumber: 308,
                     columnNumber: 215
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 307,
+            lineNumber: 308,
             columnNumber: 11
         }, this);
         $[55] = t27;
@@ -2032,7 +2052,7 @@ function AuthModal() {
                     fill: "#4285F4"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 314,
+                    lineNumber: 315,
                     columnNumber: 106
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2040,7 +2060,7 @@ function AuthModal() {
                     fill: "#34A853"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 314,
+                    lineNumber: 315,
                     columnNumber: 282
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2048,7 +2068,7 @@ function AuthModal() {
                     fill: "#FBBC05"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 314,
+                    lineNumber: 315,
                     columnNumber: 463
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2056,13 +2076,13 @@ function AuthModal() {
                     fill: "#EA4335"
                 }, void 0, false, {
                     fileName: "[project]/src/components/features/AuthModal.tsx",
-                    lineNumber: 314,
+                    lineNumber: 315,
                     columnNumber: 654
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 314,
+            lineNumber: 315,
             columnNumber: 11
         }, this);
         $[56] = t28;
@@ -2080,7 +2100,7 @@ function AuthModal() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 321,
+            lineNumber: 322,
             columnNumber: 11
         }, this);
         $[57] = handleGoogleLogin;
@@ -2108,7 +2128,7 @@ function AuthModal() {
             children: t32
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 342,
+            lineNumber: 343,
             columnNumber: 11
         }, this);
         $[62] = t32;
@@ -2129,12 +2149,12 @@ function AuthModal() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/features/AuthModal.tsx",
-                lineNumber: 350,
+                lineNumber: 351,
                 columnNumber: 53
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 350,
+            lineNumber: 351,
             columnNumber: 11
         }, this);
         $[64] = t30;
@@ -2159,12 +2179,12 @@ function AuthModal() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/features/AuthModal.tsx",
-                lineNumber: 360,
+                lineNumber: 361,
                 columnNumber: 161
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 360,
+            lineNumber: 361,
             columnNumber: 11
         }, this);
         $[68] = t15;
@@ -2183,7 +2203,7 @@ function AuthModal() {
             children: t35
         }, void 0, false, {
             fileName: "[project]/src/components/features/AuthModal.tsx",
-            lineNumber: 371,
+            lineNumber: 372,
             columnNumber: 11
         }, this);
         $[73] = handleOverlayClick;

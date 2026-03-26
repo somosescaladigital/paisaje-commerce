@@ -20,7 +20,16 @@
     "afterFiles": [],
     "fallback": []
   },
-  "dynamicRoutes": [],
+  "dynamicRoutes": [
+    {
+      "page": "/commerce/admin/editar/[id]",
+      "regex": "^/commerce/admin/editar/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/commerce/admin/editar/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
   "staticRoutes": [
     {
       "page": "/",
@@ -81,6 +90,18 @@
       "regex": "^/commerce/admin/login(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/commerce/admin/login(?:/)?$"
+    },
+    {
+      "page": "/commerce/admin/nuevo/digital",
+      "regex": "^/commerce/admin/nuevo/digital(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/commerce/admin/nuevo/digital(?:/)?$"
+    },
+    {
+      "page": "/commerce/admin/nuevo/membresia",
+      "regex": "^/commerce/admin/nuevo/membresia(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/commerce/admin/nuevo/membresia(?:/)?$"
     },
     {
       "page": "/commerce/dashboard",

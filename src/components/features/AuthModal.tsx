@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { useAuthModalStore } from '@/stores/useAuthModalStore'
 import { useRouter } from 'next/navigation'
+import { sendWelcomeAction } from '@/app/actions/emails'
 
 export default function AuthModal() {
   const { isOpen, view, closeModal, setView } = useAuthModalStore()
@@ -70,6 +71,9 @@ export default function AuthModal() {
       if (error) {
         setError(error.message)
       } else {
+        // Enviar mail de bienvenida (no esperamos a que termine para no bloquear la UI)
+        sendWelcomeAction(email, name).catch(console.error)
+        
         setError('¡Registro exitoso! Por favor verifica tu email o inicia sesión.')
         // Opcionalmente cambiar a login view
         setTimeout(() => setView('login'), 2000)

@@ -33,7 +33,9 @@ export async function POST(req: Request) {
     const orderBody = {
       items: items.map((item: any) => ({
         id: item.id,
-        title: item.nombre,
+        title: item.pago_tipo 
+          ? `${item.nombre} (${item.pago_tipo === 'mensual' ? 'Mensual' : 'Pago Total'})` 
+          : item.nombre,
         quantity: item.cantidad,
         unit_price: Number(item.precio),
         currency_id: 'ARS',
@@ -63,6 +65,7 @@ export async function POST(req: Request) {
       usuario_id: user.id,
       producto_id: item.id,
       estado_pago: 'pendiente',
+      pago_tipo: item.pago_tipo || 'total',
       mp_preference_id: createdPreference.id,
       monto_total: item.precio * item.cantidad,
     }))

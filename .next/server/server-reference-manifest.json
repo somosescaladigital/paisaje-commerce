@@ -3,61 +3,79 @@
     "0064b9664c94fad12254ece1131c5b4f3fa717d6a4": {
       "workers": {
         "app/_not-found/page": {
-          "moduleId": 15124,
+          "moduleId": 75293,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/(auth)/login/page": {
-          "moduleId": 78869,
+          "moduleId": 52969,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/(auth)/register/page": {
-          "moduleId": 45912,
+          "moduleId": 26547,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/(dashboard)/dashboard/page": {
-          "moduleId": 46209,
+          "moduleId": 92967,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/(shop)/shop/page": {
-          "moduleId": 89015,
+          "moduleId": 70234,
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        },
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": 5874,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/admin/login/page": {
-          "moduleId": 86402,
+          "moduleId": 43320,
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        },
+        "app/commerce/admin/nuevo/digital/page": {
+          "moduleId": 21686,
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        },
+        "app/commerce/admin/nuevo/membresia/page": {
+          "moduleId": 29031,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/admin/page": {
-          "moduleId": 77502,
+          "moduleId": 4369,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/page": {
-          "moduleId": 18417,
+          "moduleId": 29675,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/landing/page": {
-          "moduleId": 37262,
+          "moduleId": 20267,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/page": {
-          "moduleId": 52914,
+          "moduleId": 40013,
           "async": false,
           "exportedName": "signOut",
           "filename": "src/app/commerce/(auth)/actions.ts"
@@ -69,7 +87,10 @@
         "app/commerce/(auth)/register/page": "rsc",
         "app/commerce/(dashboard)/dashboard/page": "action-browser",
         "app/commerce/(shop)/shop/page": "action-browser",
+        "app/commerce/admin/editar/[id]/page": "action-browser",
         "app/commerce/admin/login/page": "action-browser",
+        "app/commerce/admin/nuevo/digital/page": "action-browser",
+        "app/commerce/admin/nuevo/membresia/page": "action-browser",
         "app/commerce/admin/page": "action-browser",
         "app/commerce/page": "action-browser",
         "app/landing/page": "action-browser",
@@ -78,16 +99,115 @@
       "filename": "src/app/commerce/(auth)/actions.ts",
       "exportedName": "signOut"
     },
+    "60a62687bd83f460a5bc83a211ade218c0ab1c2865": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": 75293,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/(auth)/login/page": {
+          "moduleId": 52969,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/(auth)/register/page": {
+          "moduleId": 26547,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/(dashboard)/dashboard/page": {
+          "moduleId": 92967,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/(shop)/shop/page": {
+          "moduleId": 70234,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": 5874,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/admin/login/page": {
+          "moduleId": 43320,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/admin/nuevo/digital/page": {
+          "moduleId": 21686,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/admin/nuevo/membresia/page": {
+          "moduleId": 29031,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/admin/page": {
+          "moduleId": 4369,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/commerce/page": {
+          "moduleId": 29675,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/landing/page": {
+          "moduleId": 20267,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        },
+        "app/page": {
+          "moduleId": 40013,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "action-browser",
+        "app/commerce/(auth)/login/page": "action-browser",
+        "app/commerce/(auth)/register/page": "action-browser",
+        "app/commerce/(dashboard)/dashboard/page": "action-browser",
+        "app/commerce/(shop)/shop/page": "action-browser",
+        "app/commerce/admin/editar/[id]/page": "action-browser",
+        "app/commerce/admin/login/page": "action-browser",
+        "app/commerce/admin/nuevo/digital/page": "action-browser",
+        "app/commerce/admin/nuevo/membresia/page": "action-browser",
+        "app/commerce/admin/page": "action-browser",
+        "app/commerce/page": "action-browser",
+        "app/landing/page": "action-browser",
+        "app/page": "action-browser"
+      },
+      "filename": "src/app/actions/emails.ts",
+      "exportedName": "sendWelcomeAction"
+    },
     "004633c3c25f2d4137f68f6176ba3f1109bd8b9f08": {
       "workers": {
         "app/commerce/(auth)/login/page": {
-          "moduleId": 78869,
+          "moduleId": 52969,
           "async": false,
           "exportedName": "signInWithGoogle",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/(auth)/register/page": {
-          "moduleId": 45912,
+          "moduleId": 26547,
           "async": false,
           "exportedName": "signInWithGoogle",
           "filename": "src/app/commerce/(auth)/actions.ts"
@@ -103,13 +223,13 @@
     "40376791cfd63f2015e72029a32c92d1a1c0cc9793": {
       "workers": {
         "app/commerce/(auth)/login/page": {
-          "moduleId": 78869,
+          "moduleId": 52969,
           "async": false,
           "exportedName": "login",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/(auth)/register/page": {
-          "moduleId": 45912,
+          "moduleId": 26547,
           "async": false,
           "exportedName": "login",
           "filename": "src/app/commerce/(auth)/actions.ts"
@@ -125,13 +245,13 @@
     "406561c6da18f741650bdba10a232ec6412c2519c2": {
       "workers": {
         "app/commerce/(auth)/login/page": {
-          "moduleId": 78869,
+          "moduleId": 52969,
           "async": false,
           "exportedName": "signup",
           "filename": "src/app/commerce/(auth)/actions.ts"
         },
         "app/commerce/(auth)/register/page": {
-          "moduleId": 45912,
+          "moduleId": 26547,
           "async": false,
           "exportedName": "signup",
           "filename": "src/app/commerce/(auth)/actions.ts"
@@ -146,30 +266,174 @@
     },
     "00cc7f01ca0ffdf27f3818d20acee2da46d98bd886": {
       "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": 5874,
+          "async": false,
+          "exportedName": "adminLogout",
+          "filename": "src/app/commerce/admin/actions.ts"
+        },
         "app/commerce/admin/login/page": {
-          "moduleId": 86402,
+          "moduleId": 43320,
+          "async": false,
+          "exportedName": "adminLogout",
+          "filename": "src/app/commerce/admin/actions.ts"
+        },
+        "app/commerce/admin/nuevo/digital/page": {
+          "moduleId": 21686,
+          "async": false,
+          "exportedName": "adminLogout",
+          "filename": "src/app/commerce/admin/actions.ts"
+        },
+        "app/commerce/admin/nuevo/membresia/page": {
+          "moduleId": 29031,
           "async": false,
           "exportedName": "adminLogout",
           "filename": "src/app/commerce/admin/actions.ts"
         },
         "app/commerce/admin/page": {
-          "moduleId": 77502,
+          "moduleId": 4369,
           "async": false,
           "exportedName": "adminLogout",
           "filename": "src/app/commerce/admin/actions.ts"
         }
       },
       "layer": {
+        "app/commerce/admin/editar/[id]/page": "action-browser",
         "app/commerce/admin/login/page": "rsc",
+        "app/commerce/admin/nuevo/digital/page": "action-browser",
+        "app/commerce/admin/nuevo/membresia/page": "action-browser",
         "app/commerce/admin/page": "action-browser"
       },
       "filename": "src/app/commerce/admin/actions.ts",
       "exportedName": "adminLogout"
     },
+    "40f75b2f8c6641db854d11ac9d4843f996228bed99": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": 5874,
+          "async": false,
+          "exportedName": "deleteProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/digital/page": {
+          "moduleId": 21686,
+          "async": false,
+          "exportedName": "deleteProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/membresia/page": {
+          "moduleId": 29031,
+          "async": false,
+          "exportedName": "deleteProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/page": {
+          "moduleId": 4369,
+          "async": false,
+          "exportedName": "deleteProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "rsc",
+        "app/commerce/admin/nuevo/digital/page": "rsc",
+        "app/commerce/admin/nuevo/membresia/page": "rsc",
+        "app/commerce/admin/page": "action-browser"
+      },
+      "filename": "src/app/commerce/admin/nuevo/actions.ts",
+      "exportedName": "deleteProduct"
+    },
+    "401062e573c69838d2cd8eb9241392c9b0b26d4e41": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": 5874,
+          "async": false,
+          "exportedName": "updateProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/digital/page": {
+          "moduleId": 21686,
+          "async": false,
+          "exportedName": "updateProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/membresia/page": {
+          "moduleId": 29031,
+          "async": false,
+          "exportedName": "updateProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "rsc",
+        "app/commerce/admin/nuevo/digital/page": "rsc",
+        "app/commerce/admin/nuevo/membresia/page": "rsc"
+      },
+      "filename": "src/app/commerce/admin/nuevo/actions.ts",
+      "exportedName": "updateProduct"
+    },
+    "4030533698156eec917719edfe1798c37a272925ea": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": 5874,
+          "async": false,
+          "exportedName": "createProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/digital/page": {
+          "moduleId": 21686,
+          "async": false,
+          "exportedName": "createProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/membresia/page": {
+          "moduleId": 29031,
+          "async": false,
+          "exportedName": "createProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "rsc",
+        "app/commerce/admin/nuevo/digital/page": "rsc",
+        "app/commerce/admin/nuevo/membresia/page": "rsc"
+      },
+      "filename": "src/app/commerce/admin/nuevo/actions.ts",
+      "exportedName": "createProduct"
+    },
+    "403b5d8004c0dc9c09fcfd8881c92dd1eb5add6c83": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": 5874,
+          "async": false,
+          "exportedName": "deleteResourceFile",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/digital/page": {
+          "moduleId": 21686,
+          "async": false,
+          "exportedName": "deleteResourceFile",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        },
+        "app/commerce/admin/nuevo/membresia/page": {
+          "moduleId": 29031,
+          "async": false,
+          "exportedName": "deleteResourceFile",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "action-browser",
+        "app/commerce/admin/nuevo/digital/page": "rsc",
+        "app/commerce/admin/nuevo/membresia/page": "rsc"
+      },
+      "filename": "src/app/commerce/admin/nuevo/actions.ts",
+      "exportedName": "deleteResourceFile"
+    },
     "40d71240f2a12f8022780558ba0278a1a159ece2ad": {
       "workers": {
         "app/commerce/admin/login/page": {
-          "moduleId": 86402,
+          "moduleId": 43320,
           "async": false,
           "exportedName": "adminLogin",
           "filename": "src/app/commerce/admin/actions.ts"

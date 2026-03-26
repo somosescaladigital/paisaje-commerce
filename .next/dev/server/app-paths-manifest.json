@@ -1,12 +1,9 @@
 {
-  "/(auth)/login/page": "app/(auth)/login/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/commerce/(auth)/login/page": "app/commerce/(auth)/login/page.js",
-  "/commerce/(dashboard)/admin/page": "app/commerce/(dashboard)/admin/page.js",
   "/commerce/(shop)/shop/page": "app/commerce/(shop)/shop/page.js",
-  "/commerce/admin/login/page": "app/commerce/admin/login/page.js",
+  "/commerce/admin/editar/[id]/page": "app/commerce/admin/editar/[id]/page.js",
+  "/commerce/admin/nuevo/digital/page": "app/commerce/admin/nuevo/digital/page.js",
+  "/commerce/admin/nuevo/membresia/page": "app/commerce/admin/nuevo/membresia/page.js",
   "/commerce/admin/page": "app/commerce/admin/page.js",
-  "/commerce/page": "app/commerce/page.js",
-  "/landing/page": "app/landing/page.js",
-  "/page": "app/page.js"
+  "/landing/page": "app/landing/page.js"
 }

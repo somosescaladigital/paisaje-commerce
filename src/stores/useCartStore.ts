@@ -7,6 +7,7 @@ export interface CartItem {
   precio: number
   imagen_url: string | null
   cantidad: number
+  pago_tipo?: 'mensual' | 'total'
 }
 
 interface CartState {
@@ -26,11 +27,13 @@ export const useCartStore = create<CartState>()(
       
       addItem: (newItem) => {
         set((state) => {
-          const existingItem = state.items.find((item) => item.id === newItem.id)
+          const existingItem = state.items.find(
+            (item) => item.id === newItem.id && item.pago_tipo === newItem.pago_tipo
+          )
           if (existingItem) {
             return {
               items: state.items.map((item) =>
-                item.id === newItem.id
+                item.id === newItem.id && item.pago_tipo === newItem.pago_tipo
                   ? { ...item, cantidad: item.cantidad + 1 }
                   : item
               ),

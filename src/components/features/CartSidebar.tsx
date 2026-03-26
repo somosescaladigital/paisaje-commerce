@@ -128,7 +128,14 @@ export default function CartSidebar() {
                       
                       <div className="flex flex-col flex-1 py-1">
                         <div className="flex justify-between items-start gap-3">
-                          <h4 className="font-serif text-lg text-primary leading-tight line-clamp-2">{item.nombre}</h4>
+                          <div>
+                            <h4 className="font-serif text-lg text-primary leading-tight line-clamp-2">{item.nombre}</h4>
+                            {item.pago_tipo && (
+                              <span className="text-[10px] font-bold text-accent uppercase tracking-widest leading-none mt-1 inline-block">
+                                ({item.pago_tipo === 'mensual' ? 'Mensual' : 'Pago Total'})
+                              </span>
+                            )}
+                          </div>
                           <button 
                             onClick={() => removeItem(item.id)}
                             className="text-primary/20 hover:text-red-500 transition-colors p-1"

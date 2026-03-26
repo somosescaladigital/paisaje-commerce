@@ -83,10 +83,37 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/commerce/admin/editar/[id]/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/commerce/admin/editar/[id]">> = Specific
+  const handler = {} as typeof import("../../src/app/commerce/admin/editar/[id]/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/commerce/admin/login/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/commerce/admin/login">> = Specific
   const handler = {} as typeof import("../../src/app/commerce/admin/login/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/commerce/admin/nuevo/digital/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/commerce/admin/nuevo/digital">> = Specific
+  const handler = {} as typeof import("../../src/app/commerce/admin/nuevo/digital/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/commerce/admin/nuevo/membresia/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/commerce/admin/nuevo/membresia">> = Specific
+  const handler = {} as typeof import("../../src/app/commerce/admin/nuevo/membresia/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
