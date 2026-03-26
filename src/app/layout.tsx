@@ -25,7 +25,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Escala Digital | Paisajismo & Coaching",
+  title: "Paisajismo y Sentidos | Paisajismo & Coaching",
   description: "Tienda de productos virtuales y servicios de paisajismo.",
 };
 

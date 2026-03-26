@@ -13,26 +13,26 @@ export default async function AdminLoginPage({
         <div className="p-10">
           <div className="text-center mb-10">
             <h1 className="text-4xl font-serif text-primary mb-2 italic tracking-tight">Acceso <span className="not-italic font-bold">Admin</span></h1>
-            <p className="text-primary/60 text-sm">Escala Digital | Panel de Gestión</p>
+            <p className="text-primary/60 text-sm">Paisajismo y Sentidos | Panel de Gestión</p>
           </div>
 
           <form action={adminLogin} className="space-y-6">
             <div className="space-y-2">
               <label className="text-xs font-bold text-primary/40 uppercase tracking-widest ml-1">Usuario</label>
-              <input 
-                type="text" 
-                name="username" 
+              <input
+                type="text"
+                name="username"
                 required
                 placeholder="superadmin"
                 className="w-full rounded-2xl border border-neutral-200 bg-neutral-50 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all font-sans"
               />
             </div>
-            
+
             <div className="space-y-2">
               <label className="text-xs font-bold text-primary/40 uppercase tracking-widest ml-1">Contraseña</label>
-              <input 
-                type="password" 
-                name="password" 
+              <input
+                type="password"
+                name="password"
                 required
                 placeholder="••••••••"
                 className="w-full rounded-2xl border border-neutral-200 bg-neutral-50 px-5 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all font-sans"
@@ -49,7 +49,7 @@ export default async function AdminLoginPage({
               Ingresar al Panel
             </button>
           </form>
-          
+
           <div className="mt-10 text-center">
             <p className="text-xs text-primary/30">© 2026 Paisajismo y Sentidos. Acceso Restringido.</p>
           </div>

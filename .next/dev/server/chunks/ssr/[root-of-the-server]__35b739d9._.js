@@ -408,7 +408,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$provide
 ;
 ;
 const metadata = {
-    title: "Escala Digital | Paisajismo & Coaching",
+    title: "Paisajismo y Sentidos | Paisajismo & Coaching",
     description: "Tienda de productos virtuales y servicios de paisajismo."
 };
 ;

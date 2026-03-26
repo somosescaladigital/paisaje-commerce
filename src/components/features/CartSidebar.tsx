@@ -6,10 +6,9 @@ import { useCartStore } from '@/stores/useCartStore'
 import { formatCurrency } from '@/lib/utils'
 
 export default function CartSidebar() {
-  const [isOpen, setIsOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [mounted, setMounted] = useState(false)
-  const { items, removeItem, updateQuantity, getTotal, getTotalItems } = useCartStore()
+  const { items, removeItem, updateQuantity, getTotal, getTotalItems, isSidebarOpen, openSidebar, closeSidebar } = useCartStore()
 
   useEffect(() => {
     setMounted(true)
@@ -44,7 +43,7 @@ export default function CartSidebar() {
   return (
     <>
       <button 
-        onClick={() => setIsOpen(true)}
+        onClick={openSidebar}
         className="relative p-2 text-primary hover:text-forest transition-colors"
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -62,23 +61,23 @@ export default function CartSidebar() {
       {mounted && createPortal(
         <>
           {/* Overlay */}
-          {isOpen && (
+          {isSidebarOpen && (
             <div 
-              className="fixed inset-0 bg-black/60 z-[100] transition-opacity backdrop-blur-sm"
-              onClick={() => setIsOpen(false)}
+              className="fixed inset-0 bg-black/60 z-[2000] transition-opacity backdrop-blur-sm"
+              onClick={closeSidebar}
             />
           )}
 
           {/* Sidebar */}
           <div 
-            className={`fixed top-0 right-0 h-full w-full sm:w-[500px] bg-white shadow-[-20px_0_50px_rgba(0,0,0,0.1)] z-[101] transform transition-transform duration-500 ease-out flex flex-col ${
-              isOpen ? 'translate-x-0' : 'translate-x-full'
+            className={`fixed top-0 right-0 h-full w-full sm:w-[500px] bg-white shadow-[-20px_0_50px_rgba(0,0,0,0.1)] z-[2001] transform transition-transform duration-500 ease-out flex flex-col ${
+              isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
           >
             <div className="p-8 border-b border-light-green/10 flex items-center justify-between bg-background">
               <h2 className="text-3xl font-serif text-primary italic">Tu Selección</h2>
               <button 
-                onClick={() => setIsOpen(false)}
+                onClick={closeSidebar}
                 className="p-3 text-primary/40 hover:text-primary hover:bg-light-green/10 rounded-2xl transition-all active:scale-90"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -101,7 +100,7 @@ export default function CartSidebar() {
                   <div className="text-center">
                     <p className="font-serif text-xl text-primary/60">Tu carrito está vacío</p>
                     <button 
-                      onClick={() => setIsOpen(false)}
+                      onClick={closeSidebar}
                       className="text-accent font-bold hover:underline mt-2 text-sm"
                     >
                       Explorar el catálogo

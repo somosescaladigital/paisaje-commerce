@@ -12,10 +12,13 @@ export interface CartItem {
 
 interface CartState {
   items: CartItem[]
+  isSidebarOpen: boolean
   addItem: (item: Omit<CartItem, 'cantidad'>) => void
   removeItem: (id: string) => void
   updateQuantity: (id: string, cantidad: number) => void
   clearCart: () => void
+  openSidebar: () => void
+  closeSidebar: () => void
   getTotal: () => number
   getTotalItems: () => number
 }
@@ -24,7 +27,11 @@ export const useCartStore = create<CartState>()(
   persist(
     (set, get) => ({
       items: [],
+      isSidebarOpen: false,
       
+      openSidebar: () => set({ isSidebarOpen: true }),
+      closeSidebar: () => set({ isSidebarOpen: false }),
+
       addItem: (newItem) => {
         set((state) => {
           const existingItem = state.items.find(
@@ -37,9 +44,13 @@ export const useCartStore = create<CartState>()(
                   ? { ...item, cantidad: item.cantidad + 1 }
                   : item
               ),
+              isSidebarOpen: true,
             }
           }
-          return { items: [...state.items, { ...newItem, cantidad: 1 }] }
+          return { 
+            items: [...state.items, { ...newItem, cantidad: 1 }],
+            isSidebarOpen: true,
+          }
         })
       },
       

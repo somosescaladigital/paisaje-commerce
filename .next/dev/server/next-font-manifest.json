@@ -1,42 +1,6 @@
 {
   "app": {
-    "[project]/src/app/_not-found/page": [
-      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2",
-      "static/media/2a65768255d6b625-s.p.d19752fb.woff2",
-      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
-    ],
-    "[project]/src/app/commerce/(shop)/shop/page": [
-      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2",
-      "static/media/2a65768255d6b625-s.p.d19752fb.woff2",
-      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
-    ],
-    "[project]/src/app/commerce/admin/editar/[id]/page": [
-      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2",
-      "static/media/2a65768255d6b625-s.p.d19752fb.woff2",
-      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
-    ],
-    "[project]/src/app/commerce/admin/nuevo/digital/page": [
-      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2",
-      "static/media/2a65768255d6b625-s.p.d19752fb.woff2",
-      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
-    ],
-    "[project]/src/app/commerce/admin/nuevo/membresia/page": [
-      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2",
-      "static/media/2a65768255d6b625-s.p.d19752fb.woff2",
-      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
-    ],
-    "[project]/src/app/commerce/admin/page": [
-      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2",
-      "static/media/2a65768255d6b625-s.p.d19752fb.woff2",
-      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
-    ],
-    "[project]/src/app/landing/page": [
+    "[project]/src/app/page": [
       "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2",
       "static/media/2a65768255d6b625-s.p.d19752fb.woff2",
