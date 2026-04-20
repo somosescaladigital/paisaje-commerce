@@ -9,10 +9,13 @@ export default async function ShopPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   
-  // Obtenemos todos los productos activos
+  // Obtenemos todos los productos activos con sus archivos
   const { data: productos, error } = await supabase
     .from('productos')
-    .select('*')
+    .select(`
+      *,
+      archivos:producto_archivos(id, nombre_archivo, archivo_url)
+    `)
     .eq('activo', true)
     .order('created_at', { ascending: false })
 
