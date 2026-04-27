@@ -40,7 +40,7 @@ export default function ProductTypeModal() {
           <p className="text-primary/40 font-sans tracking-tight">Selecciona el tipo de recurso que deseas añadir a tu catálogo.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <Link 
             href="/commerce/admin/nuevo/digital"
             className="group block p-8 rounded-[2rem] bg-neutral-50 border border-neutral-100 hover:border-primary/20 hover:bg-white hover:shadow-xl hover:shadow-primary/5 transition-all text-center relative overflow-hidden"
@@ -51,6 +51,18 @@ export default function ProductTypeModal() {
             </div>
             <h3 className="text-xl font-serif text-primary font-bold mb-2">Producto Digital</h3>
             <p className="text-sm text-primary/40 font-sans italic leading-relaxed">Guías PDF, recursos, kits de diseño y más.</p>
+          </Link>
+
+          <Link 
+            href="/commerce/admin/nuevo/curso"
+            className="group block p-8 rounded-[2rem] bg-neutral-50 border border-neutral-100 hover:border-forest/20 hover:bg-white hover:shadow-xl hover:shadow-forest/5 transition-all text-center relative overflow-hidden"
+          >
+            <div className="absolute top-0 left-0 w-1 h-full bg-forest opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="w-16 h-16 bg-forest/5 rounded-2xl flex items-center justify-center text-forest mx-auto mb-6 group-hover:scale-110 transition-transform">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h3 className="text-xl font-serif text-primary font-bold mb-2">Curso</h3>
+            <p className="text-sm text-primary/40 font-sans italic leading-relaxed">Con videos, imágenes y contenido multimedia.</p>
           </Link>
 
           <Link 

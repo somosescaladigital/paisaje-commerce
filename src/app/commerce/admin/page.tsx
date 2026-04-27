@@ -18,7 +18,7 @@ export default async function AdminDashboard() {
   const supabase = await createClient()
   const { data: productos, error } = await supabase
     .from('productos')
-    .select('*, producto_archivos(id, nombre_archivo)')
+    .select('*, producto_archivos(id, nombre_archivo), curso_multimedia(id, tipo, nombre)')
     .eq('activo', true)
     .order('created_at', { ascending: false })
 
@@ -83,9 +83,6 @@ export default async function AdminDashboard() {
                 <tr><td colSpan={4} className="px-8 py-20 text-center text-primary/40 italic">No hay productos cargados aún.</td></tr>
               ) : (
                 productos?.map((prod: any) => {
-                  const archivos = prod.producto_archivos || []
-                  const hasArchivos = archivos.length > 0
-
                   return (
                     <tr key={prod.id} className="hover:bg-neutral-50 transition-colors group">
                       <td className="px-8 py-5">
@@ -96,6 +93,9 @@ export default async function AdminDashboard() {
                           <div>
                             <div className="flex items-center gap-2">
                               <p className="font-serif text-base text-primary font-bold">{prod.nombre}</p>
+                              {prod.type === 'curso' && (
+                                <span className="bg-forest/10 text-forest text-[9px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Curso</span>
+                              )}
                               {prod.es_membresia && (
                                 <span className="bg-accent/10 text-accent text-[9px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Membresía {prod.duracion_meses}m</span>
                               )}
@@ -109,22 +109,30 @@ export default async function AdminDashboard() {
                       </td>
                       <td className="px-8 py-5">
                         <div className="flex items-center gap-2">
-                          <span className={`flex items-center justify-center w-8 h-8 rounded-lg border ${hasArchivos ? 'bg-green-50 text-green-600 border-green-100' : 'bg-red-50 text-red-600 border-red-100'}`}>
-                            {hasArchivos ? (
-                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-                            ) : (
-                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                            )}
-                          </span>
-                          {archivos.length > 1 && (
-                            <span className="text-[10px] font-bold text-primary/40 uppercase tracking-widest">
-                              {archivos.length} archivos
-                            </span>
-                          )}
-                          {archivos.length === 1 && (
-                            <span className="text-[10px] font-bold text-primary/40 uppercase tracking-widest">
-                              1 archivo
-                            </span>
+                          {prod.type === 'curso' ? (
+                            <>
+                              <span className={`flex items-center justify-center w-8 h-8 rounded-lg border bg-purple-50 text-purple-600 border-purple-100`}>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M23 7l-7 5 7 5V7z"></path><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                              </span>
+                              <span className="text-[10px] font-bold text-primary/40 uppercase tracking-widest">
+                                {(prod.curso_multimedia || []).length} archivos
+                              </span>
+                            </>
+                          ) : (
+                            <>
+                              <span className={`flex items-center justify-center w-8 h-8 rounded-lg border ${(prod.producto_archivos || []).length > 0 ? 'bg-green-50 text-green-600 border-green-100' : 'bg-red-50 text-red-600 border-red-100'}`}>
+                                {(prod.producto_archivos || []).length > 0 ? (
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                ) : (
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                                )}
+                              </span>
+                              {(prod.producto_archivos || []).length !== 0 && (
+                                <span className="text-[10px] font-bold text-primary/40 uppercase tracking-widest">
+                                  {(prod.producto_archivos || []).length} {(prod.producto_archivos || []).length === 1 ? 'archivo' : 'archivos'}
+                                </span>
+                              )}
+                            </>
                           )}
                         </div>
                       </td>

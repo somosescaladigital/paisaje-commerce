@@ -1,0 +1,462 @@
+[00:00:01.805] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:02.062] Server  LOG     ✓ Ready in 1451ms
+[00:00:05.277] Server  LOG     ○ Compiling /commerce/admin/nuevo/curso ...
+[00:00:08.407] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.533] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.584] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:31.774] Server  LOG     DEBUG: Creando producto {}
+[00:02:33.219] Server  LOG     ✓ Compiled in 687ms
+[00:05:12.263] Server  LOG     DEBUG: Creando producto {}
+[00:05:59.508] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:22.410] Server  LOG     ✓ Compiled in 154ms
+[00:06:22.523] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:210:1
+Parsing ecmascript source code failed
+  208 | }
+  209 |
+> 210 | function extractVideoTitle(url: string): string {
+      | ^
+  211 |   try {
+  212 |     const youtubeMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/)
+  213 |     if (youtubeMatch && youtubeMatch[1]) {
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:22.730] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:210:1
+Parsing ecmascript source code failed
+  208 | }
+  209 |
+> 210 | function extractVideoTitle(url: string): string {
+      | ^
+  211 |   try {
+  212 |     const youtubeMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/)
+  213 |     if (youtubeMatch && youtubeMatch[1]) {
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:22.746] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:210:1
+Parsing ecmascript source code failed
+  208 | }
+  209 |
+> 210 | function extractVideoTitle(url: string): string {
+      | ^
+  211 |   try {
+  212 |     const youtubeMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/)
+  213 |     if (youtubeMatch && youtubeMatch[1]) {
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:30.744] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:211:1
+Parsing ecmascript source code failed
+  209 | }
+  210 |
+> 211 | function extractVideoTitle(url: string): string {
+      | ^
+  212 |   try {
+  213 |     const youtubeMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/)
+  214 |     if (youtubeMatch && youtubeMatch[1]) {
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:30.745] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:211:1
+Parsing ecmascript source code failed
+  209 | }
+  210 |
+> 211 | function extractVideoTitle(url: string): string {
+      | ^
+  212 |   try {
+  213 |     const youtubeMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/)
+  214 |     if (youtubeMatch && youtubeMatch[1]) {
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:30.745] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:211:1
+Parsing ecmascript source code failed
+  209 | }
+  210 |
+> 211 | function extractVideoTitle(url: string): string {
+      | ^
+  212 |   try {
+  213 |     const youtubeMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/)
+  214 |     if (youtubeMatch && youtubeMatch[1]) {
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:44.738] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:206:5
+Parsing ecmascript source code failed
+  204 |       }
+  205 |     }
+> 206 |   } catch (err) {
+      |     ^^^^^
+  207 |     console.error('Error en processCourseMultimedia:', err)
+  208 |   }
+  209 | }
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:44.739] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:206:5
+Parsing ecmascript source code failed
+  204 |       }
+  205 |     }
+> 206 |   } catch (err) {
+      |     ^^^^^
+  207 |     console.error('Error en processCourseMultimedia:', err)
+  208 |   }
+  209 | }
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:06:44.739] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:206:5
+Parsing ecmascript source code failed
+  204 |       }
+  205 |     }
+> 206 |   } catch (err) {
+      |     ^^^^^
+  207 |     console.error('Error en processCourseMultimedia:', err)
+  208 |   }
+  209 | }
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component Browser]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/commerce/admin/nuevo/actions.ts [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Client Component SSR]
+    ./src/app/commerce/admin/nuevo/curso/page.tsx [Server Component]
+[00:07:00.915] Server  LOG     ✓ Compiled in 117ms
+[00:07:01.735] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:01.735] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:01.736] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:49.170] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:49.745] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:49.746] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:50.440] Server  ERROR   ⨯ ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+
+
+[00:07:50.798] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:50.798] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:50.798] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:51.096] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:51.690] Browser ERROR   uncaughtError: Error: ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+
+
+[00:07:51.740] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:51.740] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:51.979] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:51.979] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:51.979] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./src/app/commerce/admin/nuevo/actions.ts
+    ./src/app/commerce/admin/editar/[id]/page.tsx
+[00:07:51.979] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:52.738] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:07:52.738] Browser ERROR   ./src/app/commerce/admin/nuevo/actions.ts:178:11
+Ecmascript file had an error
+  176 |
+  177 |     // Procesar archivos de video subidos
+> 178 |     const videoFiles = formData.getAll('video_archivo') as File[]
+      |           ^^^^^^^^^^
+  179 |     for (const file of videoFiles) {
+  180 |       if (file && file.size && file.size > 0 && file.name !== 'undefined') {
+  181 |         const fileExt = file.name.split('.').pop()
+
+the name `videoFiles` is defined multiple times
+[00:08:11.752] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:11.768] Server  LOG     ✓ Compiled in 95ms
+[00:08:14.455] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:14.698] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:00.064] Server  LOG     DEBUG: Creando producto {}
+[00:09:02.384] Server  LOG     DEBUG: Iniciando processCourseMultimedia para producto: "e6bad3e0-d955-4390-89a5-79d94752dc05"
+[00:09:02.385] Server  LOG     DEBUG: Encontrado: 1 imágenes galería, 1 URLs video, 1 archivos video
+[00:10:51.443] Server  LOG     DEBUG: Creando producto {}
+[00:10:51.934] Server  LOG     DEBUG: Iniciando processCourseMultimedia para producto: "31ab8d7a-b3fb-499f-adf3-add2f7cbea31"
+[00:10:51.934] Server  LOG     DEBUG: Encontrado: 1 imágenes galería, 1 URLs video, 1 archivos video
+[00:11:54.176] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:35.482] Server  LOG     DEBUG: Creando producto {}
+[00:12:36.467] Server  LOG     DEBUG: Iniciando processCourseMultimedia para producto: "549a757f-3ec8-4f58-ad95-6d79822068dc"
+[00:12:36.469] Server  LOG     DEBUG: Encontrado: 1 imágenes galería, 1 URLs video, 1 archivos video
+[00:12:41.855] Server  ERROR   ERROR insertando video (archivo) en DB: "new row violates row-level security policy for table \"curso_multimedia\""
+[00:13:59.631] Server  LOG     DEBUG: Creando producto {}
+[00:14:01.597] Server  LOG     DEBUG: Iniciando processCourseMultimedia para producto: "8d7a9617-ebda-4bd7-8f7a-fbccf39ab3ef"
+[00:14:01.598] Server  LOG     DEBUG: Encontrado: 1 imágenes galería, 1 URLs video, 1 archivos video
+[00:14:06.270] Server  ERROR   ERROR insertando video (archivo) en DB: "new row violates row-level security policy for table \"curso_multimedia\""
+[00:15:58.345] Server  LOG     DEBUG: Creando producto {}
+[00:15:59.025] Server  LOG     DEBUG: Iniciando processCourseMultimedia para producto: "182d7c45-2743-4d48-853d-310b446e8032"
+[00:15:59.026] Server  LOG     DEBUG: Encontrado: 1 imágenes galería, 1 URLs video, 1 archivos video
+[00:16:04.034] Server  LOG     OK: Archivo de video guardado: "Grabación 2026-04-16 171150.mp4"

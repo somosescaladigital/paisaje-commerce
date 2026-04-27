@@ -1,0 +1,125 @@
+{
+  "node": {
+    "60b36c179fcd2c9ecbac4307179baaef7e4bf6ca4f": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "action-browser"
+      },
+      "exportedName": "sendWelcomeAction",
+      "filename": "src/app/actions/emails.ts"
+    },
+    "005c6db0b07a32736296a750755553643a362e3e02": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "action-browser"
+      },
+      "exportedName": "signOut",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    },
+    "00840a272047a5e8bb899c2d29317caae3090bc43d": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "adminLogout",
+          "filename": "src/app/commerce/admin/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "action-browser"
+      },
+      "exportedName": "adminLogout",
+      "filename": "src/app/commerce/admin/actions.ts"
+    },
+    "400987150f212ccd10a6b3d0b46d36e2f385924dac": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "rsc"
+      },
+      "exportedName": "createProduct",
+      "filename": "src/app/commerce/admin/nuevo/actions.ts"
+    },
+    "400fed90c362c1ea0bec4bc8be7f55696d8fac4828": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "rsc"
+      },
+      "exportedName": "updateProduct",
+      "filename": "src/app/commerce/admin/nuevo/actions.ts"
+    },
+    "40809aea7b08c42c1c3536099b6c32e56268c340c1": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteCourseMedia",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "rsc"
+      },
+      "exportedName": "deleteCourseMedia",
+      "filename": "src/app/commerce/admin/nuevo/actions.ts"
+    },
+    "40a1dbb287365d278a9a0f8dbfe1683913c0d3fb40": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteResourceFile",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "action-browser"
+      },
+      "exportedName": "deleteResourceFile",
+      "filename": "src/app/commerce/admin/nuevo/actions.ts"
+    },
+    "40fbfa2a0b0ab2a8f94bcfd182873bf2c64da1acd9": {
+      "workers": {
+        "app/commerce/admin/editar/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/commerce/admin/editar/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/commerce/admin/actions.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/commerce/admin/nuevo/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/editar/[id]/page": "rsc"
+      },
+      "exportedName": "deleteProduct",
+      "filename": "src/app/commerce/admin/nuevo/actions.ts"
+    }
+  },
+  "edge": {}
+}

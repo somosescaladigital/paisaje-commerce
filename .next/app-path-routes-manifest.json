@@ -1,0 +1,22 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/checkout/route": "/api/checkout",
+  "/api/descargar/route": "/api/descargar",
+  "/api/webhooks/mercadopago/route": "/api/webhooks/mercadopago",
+  "/auth/callback/route": "/auth/callback",
+  "/commerce/(auth)/login/page": "/commerce/login",
+  "/commerce/(auth)/register/page": "/commerce/register",
+  "/commerce/(dashboard)/dashboard/page": "/commerce/dashboard",
+  "/commerce/(shop)/shop/page": "/commerce/shop",
+  "/commerce/admin/editar/[id]/page": "/commerce/admin/editar/[id]",
+  "/commerce/admin/login/page": "/commerce/admin/login",
+  "/commerce/admin/nuevo/curso/page": "/commerce/admin/nuevo/curso",
+  "/commerce/admin/nuevo/digital/page": "/commerce/admin/nuevo/digital",
+  "/commerce/admin/nuevo/membresia/page": "/commerce/admin/nuevo/membresia",
+  "/commerce/admin/page": "/commerce/admin",
+  "/commerce/page": "/commerce",
+  "/favicon.ico/route": "/favicon.ico",
+  "/landing/page": "/landing",
+  "/page": "/"
+}

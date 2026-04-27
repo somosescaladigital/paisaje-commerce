@@ -1,0 +1,65 @@
+{
+  "node": {
+    "003a22540fd0cc1ded84a7e64ee11e2e621ef8269c": {
+      "workers": {
+        "app/commerce/admin/nuevo/curso/page": {
+          "moduleId": 84010,
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/nuevo/curso/page": "action-browser"
+      },
+      "exportedName": "signOut",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    },
+    "605cf1c39897d650f3b5ac08a943d052c15da7ff4c": {
+      "workers": {
+        "app/commerce/admin/nuevo/curso/page": {
+          "moduleId": 84010,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/nuevo/curso/page": "action-browser"
+      },
+      "exportedName": "sendWelcomeAction",
+      "filename": "src/app/actions/emails.ts"
+    },
+    "00b6ae673a0769b171416a3441c93b8e5cea4e32dd": {
+      "workers": {
+        "app/commerce/admin/nuevo/curso/page": {
+          "moduleId": 84010,
+          "async": false,
+          "exportedName": "adminLogout",
+          "filename": "src/app/commerce/admin/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/nuevo/curso/page": "action-browser"
+      },
+      "exportedName": "adminLogout",
+      "filename": "src/app/commerce/admin/actions.ts"
+    },
+    "4003ee0bf39b92742996e86c88dd35a2db0532a7f9": {
+      "workers": {
+        "app/commerce/admin/nuevo/curso/page": {
+          "moduleId": 84010,
+          "async": false,
+          "exportedName": "createProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/nuevo/curso/page": "action-browser"
+      },
+      "exportedName": "createProduct",
+      "filename": "src/app/commerce/admin/nuevo/actions.ts"
+    }
+  },
+  "edge": {}
+}

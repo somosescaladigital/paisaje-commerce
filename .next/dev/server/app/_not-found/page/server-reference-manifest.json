@@ -1,0 +1,35 @@
+{
+  "node": {
+    "60b36c179fcd2c9ecbac4307179baaef7e4bf6ca4f": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "action-browser"
+      },
+      "exportedName": "sendWelcomeAction",
+      "filename": "src/app/actions/emails.ts"
+    },
+    "005c6db0b07a32736296a750755553643a362e3e02": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/actions/emails.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/commerce/(auth)/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "action-browser"
+      },
+      "exportedName": "signOut",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,80 @@
+{
+  "node": {
+    "003a22540fd0cc1ded84a7e64ee11e2e621ef8269c": {
+      "workers": {
+        "app/commerce/(auth)/register/page": {
+          "moduleId": 26547,
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/(auth)/register/page": "rsc"
+      },
+      "exportedName": "signOut",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    },
+    "605cf1c39897d650f3b5ac08a943d052c15da7ff4c": {
+      "workers": {
+        "app/commerce/(auth)/register/page": {
+          "moduleId": 26547,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/(auth)/register/page": "action-browser"
+      },
+      "exportedName": "sendWelcomeAction",
+      "filename": "src/app/actions/emails.ts"
+    },
+    "00b018bd37b656ce824c13a06b913048eb44df5861": {
+      "workers": {
+        "app/commerce/(auth)/register/page": {
+          "moduleId": 26547,
+          "async": false,
+          "exportedName": "signInWithGoogle",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/(auth)/register/page": "rsc"
+      },
+      "exportedName": "signInWithGoogle",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    },
+    "4064c1869a783207e5e4b47ae7a809d226891dbf91": {
+      "workers": {
+        "app/commerce/(auth)/register/page": {
+          "moduleId": 26547,
+          "async": false,
+          "exportedName": "login",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/(auth)/register/page": "rsc"
+      },
+      "exportedName": "login",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    },
+    "40d69707f01327bb4c289c8a210c0122406fa7ad5f": {
+      "workers": {
+        "app/commerce/(auth)/register/page": {
+          "moduleId": 26547,
+          "async": false,
+          "exportedName": "signup",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/(auth)/register/page": "rsc"
+      },
+      "exportedName": "signup",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    }
+  },
+  "edge": {}
+}

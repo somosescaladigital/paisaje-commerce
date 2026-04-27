@@ -1,0 +1,65 @@
+{
+  "node": {
+    "003a22540fd0cc1ded84a7e64ee11e2e621ef8269c": {
+      "workers": {
+        "app/commerce/admin/page": {
+          "moduleId": 4369,
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "src/app/commerce/(auth)/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/page": "action-browser"
+      },
+      "exportedName": "signOut",
+      "filename": "src/app/commerce/(auth)/actions.ts"
+    },
+    "605cf1c39897d650f3b5ac08a943d052c15da7ff4c": {
+      "workers": {
+        "app/commerce/admin/page": {
+          "moduleId": 4369,
+          "async": false,
+          "exportedName": "sendWelcomeAction",
+          "filename": "src/app/actions/emails.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/page": "action-browser"
+      },
+      "exportedName": "sendWelcomeAction",
+      "filename": "src/app/actions/emails.ts"
+    },
+    "00b6ae673a0769b171416a3441c93b8e5cea4e32dd": {
+      "workers": {
+        "app/commerce/admin/page": {
+          "moduleId": 4369,
+          "async": false,
+          "exportedName": "adminLogout",
+          "filename": "src/app/commerce/admin/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/page": "action-browser"
+      },
+      "exportedName": "adminLogout",
+      "filename": "src/app/commerce/admin/actions.ts"
+    },
+    "400629d2430846a261ae622e8033b89bf315e30e9b": {
+      "workers": {
+        "app/commerce/admin/page": {
+          "moduleId": 4369,
+          "async": false,
+          "exportedName": "deleteProduct",
+          "filename": "src/app/commerce/admin/nuevo/actions.ts"
+        }
+      },
+      "layer": {
+        "app/commerce/admin/page": "action-browser"
+      },
+      "exportedName": "deleteProduct",
+      "filename": "src/app/commerce/admin/nuevo/actions.ts"
+    }
+  },
+  "edge": {}
+}
